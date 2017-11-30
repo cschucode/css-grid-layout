@@ -16,7 +16,6 @@ body {
 	grid-template-areas:
 		"header header header header header header header header header header header header"
 		"main main main main main main main main main main main main";
-	height: 750px;
 	position: relative;
 }
 
@@ -30,14 +29,17 @@ body {
 
 .feed-item {
 	background-color: dodgerblue;
+	height: 300px;
 }
 
 .feed-interrupt {
 	background-color: green;
+	height: 350px;
 }
 
 .social-card {
 	background-color: orange;
+	height: 250px;
 }
 
 .header-nav {
