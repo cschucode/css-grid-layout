@@ -16,7 +16,6 @@ body {
 	grid-template-areas:
 		"header header header header header header header header header header header header"
 		"main main main main main main main main main main main main";
-	height: 750px;
 	position: relative;
 }
 
@@ -34,14 +33,17 @@ body {
 
 .feed-item {
 	background-color: dodgerblue;
+	height: 350px;
 }
 
 .feed-interrupt {
 	background-color: green;
+	height: 400px;
 }
 
 .social-card {
 	background-color: orange;
+	height: 300px;
 }
 
 .header-nav {
@@ -58,7 +60,7 @@ body {
 
 .main {
 	background-color: gray;
-	display: grid;
+	display: block;
 	grid-column: main;
 }
 
@@ -67,8 +69,8 @@ body {
 .social-card {
 	align-items: center;
 	display: flex;
-	flex-grow: 1;
 	justify-content: center;
+	margin: 5px;
 	opacity: .8;
 }
 
@@ -97,9 +99,8 @@ body {
 	}
 
 	.right-rail {
-		display: grid;
-		grid-template-rows: auto;
-		grid-column: r-rail;
+		display: block;
+		grid-area: r-rail;
 	}
 }
 
@@ -115,8 +116,7 @@ body {
 	}
 
 	.left-rail {
-		display: flex;
-		flex-direction: column;
+		display: block;
 		grid-area: l-rail;
 	}
 }
