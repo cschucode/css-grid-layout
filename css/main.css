@@ -28,10 +28,6 @@ body {
 	justify-content: center;
 }
 
-.feed {
-	margin: 5px 0;
-}
-
 .feed-item {
 	background-color: dodgerblue;
 }
@@ -57,7 +53,6 @@ body {
 
 
 .main {
-	background-color: gray;
 	display: grid;
 	grid-column: main;
 }
@@ -67,9 +62,8 @@ body {
 .social-card {
 	align-items: center;
 	display: flex;
-	flex-grow: 1;
 	justify-content: center;
-	opacity: .8;
+	opacity: .5;
 }
 
 @media screen and (min-width: 768px) {
@@ -81,7 +75,7 @@ body {
 	.container {
 		grid-template-areas:
 			"header header header header header header header header header header header header"
-			". main main main main main main main main main main .";
+			". . main main main main main main main main . .";
 	}
 }
 
@@ -97,8 +91,7 @@ body {
 	}
 
 	.right-rail {
-		display: grid;
-		grid-template-rows: auto;
+		display: flex;
 		grid-column: r-rail;
 	}
 }
@@ -116,8 +109,7 @@ body {
 
 	.left-rail {
 		display: flex;
-		flex-direction: column;
-		grid-area: l-rail;
+		grid-column: l-rail;
 	}
 }
 
@@ -134,7 +126,7 @@ body {
 }
 
 .item {
-	align-items: flex-end;
+	align-items: center;
 	background-color: pink;
 	display: flex;
 	justify-content: center;
